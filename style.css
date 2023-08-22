@@ -1,0 +1,40 @@
+/*formatando imagem*/
+.format-image-i{ 
+    margin-top:20px;
+    margin-left:20px;
+    border:2px solid red;
+    border-radius:8px;
+    background-color:black;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    height:300px;
+    width:400px
+}
+.format-image-ii{ 
+    margin-top:20px;
+    margin-left:20px;
+    border:2px solid yellow;
+    border-radius:8px;
+    background-color:black;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    height:300px;
+    width:400px
+}
+.format-image-iii{ 
+    margin-top:20px;
+    margin-left:20px;
+    border:2px solid cyan;
+    border-radius:8px;
+    background-color:black;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    height:300px;
+    width:400px
+}
