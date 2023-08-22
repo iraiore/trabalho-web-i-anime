@@ -1,40 +1,43 @@
-/*formatando imagem*/
-.format-image-i{ 
-    margin-top:20px;
-    margin-left:20px;
-    border:2px solid red;
-    border-radius:8px;
+/*configuração da pagina do site - TABLELESS*/
+#site{
+    /* Definimos a largura da página */
+    width:100%;
+    /* Definirmos a altura da página*/
+    height:1000px;
+    /* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+    /*top : posição de cima */
+    margin-top:0;
+    /* left: posição de esquerda*/
+    margin-left:auto;
+    /* bottom : posição de baixo */
+    margin-bottom:0;
+    /* right : posição de direita */
+    margin-right:auto;
+    /* Aqui definiremos a cor de fundo da página */
     background-color:black;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:10px;
-    padding-right:10px;
-    height:300px;
-    width:400px
-}
-.format-image-ii{ 
-    margin-top:20px;
-    margin-left:20px;
-    border:2px solid yellow;
-    border-radius:8px;
-    background-color:black;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:10px;
-    padding-right:10px;
-    height:300px;
-    width:400px
-}
-.format-image-iii{ 
-    margin-top:20px;
-    margin-left:20px;
-    border:2px solid cyan;
-    border-radius:8px;
-    background-color:black;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:10px;
-    padding-right:10px;
-    height:300px;
-    width:400px
-}
+  }
+  #header{
+    /*Novamente definimos a largura da div*/
+    width:100%;
+    /* altura da div */
+    height:100px;
+    /* Cor de fundo da div */
+    background-color:grey;
+    opacity: 60%;
+    }
+  #conteudo{
+    /*Novamente definimos a largura da div*/
+    width:90%;
+    /* altura da div */
+    height:500px;
+    /* Cor de fundo da div */
+    background-color:#0F0;
+  }
+  #footer{
+    /*Novamente definimos a largura da div*/
+    width:90%;
+    /* altura da div */
+    height:100px;
+    /* Cor de fundo da div */
+    background-color:#C3C;
+    }
