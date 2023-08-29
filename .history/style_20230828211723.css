@@ -25,3 +25,25 @@
     background-color:rgb(95, 79, 79);
     opacity: 60%;
     }
+#conteudo{
+    /*Novamente definimos a largura da div*/
+    width:90%;
+    /* altura da div */
+    height:500px;
+    /* Cor de fundo da div */
+    background-color:#0F0;
+  }
+#footer{
+    /*Novamente definimos a largura da div*/
+    width:90%;
+    /* altura da div */
+    height:100px;
+    /* Cor de fundo da div */
+    background-color:#C3C;
+  }
+/*Configuração dos parágrafos*/
+#register-login{
+  text-align: right;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:rgb(241, 234, 234);
+}
