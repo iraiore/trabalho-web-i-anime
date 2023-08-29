@@ -1,4 +1,4 @@
-/*configuração da pagina do site - TABLELESS*/
+/*configuração da pagina do site - METODOLOGIA TABLELESS*/
 #site{
     /* Definimos a largura da página */
     width:100%;
@@ -14,18 +14,18 @@
     /* right : posição de direita */
     margin-right:auto;
     /* Aqui definiremos a cor de fundo da página */
-    background-color:black;
+    background-color:gray;
   }
-  #header{
+#header{
     /*Novamente definimos a largura da div*/
     width:100%;
     /* altura da div */
     height:100px;
     /* Cor de fundo da div */
-    background-color:grey;
+    background-color:rgb(95, 79, 79);
     opacity: 60%;
     }
-  #conteudo{
+#conteudo{
     /*Novamente definimos a largura da div*/
     width:90%;
     /* altura da div */
@@ -33,11 +33,17 @@
     /* Cor de fundo da div */
     background-color:#0F0;
   }
-  #footer{
+#footer{
     /*Novamente definimos a largura da div*/
     width:90%;
     /* altura da div */
     height:100px;
     /* Cor de fundo da div */
     background-color:#C3C;
-    }
+  }
+/*Configuração dos parágrafos*/
+#register-login{
+  text-align: right;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:rgb(241, 234, 234);
+}
