@@ -3,18 +3,11 @@ Tutorial para o tableless [TABLELESS](https://www.devmedia.com.br/como-criar-um-
 Sites referencias:  
 [AnimesZone](https://animeszone.net/)  
 [anime planet](https://www.anime-planet.com/anime/watch-online/)
-[crunchytroll](https://www.crunchyroll.com/pt-br)
+[crunchytroll](https://www.crunchyroll.com/pt-br)  
 
-gradiente  
-/*background-image: linear-gradient(center, rgb(0, 0, 0), rgb(129, 126, 126));*/
+#cód e sintaxes  
 
-    <div id="site">
-        <div id="header">
+comentárrios = ```< !-- -- >```
 
-        </div>
-
-        <div id="conteudo">
-
-        </div>
-    </div>
-    <div id="footer">
+#Dúvidas   
+Como tirar a cor branca do fundo da escrita do botao entrar

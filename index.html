@@ -2,26 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="site">
-        <div id="header">
-            <div class="menu">
-                <div class="menu-dropdown" style="float:left;">
-                    <button class="botao-menu">Anime</button>
-                    <div class="lista-opcoes">
-                    <a href="#">Assistir</a>
-                    <a href="#">Recomendações</a>
-                    <a href="#">Top 10 animes</a>
-                    <a href="#">editar</a>
-                    <a href="#">editar</a>
-                </div>   
-            </div>      
+    <header>`
+        <!-- classe nav que ira aparecer com a tela maior do que 700px-->
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo<h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                   <li class="nav-item"><a href="#" class="nav-link">Assistir</a></li> 
+                   <li class="nav-item"><a href="#" class="nav-link">Recomendações</a></li> 
+                   <li class="nav-item"><a href="#" class="nav-link">Top 10 animes</a></li> 
+                   <li class="nav-item"><a href="#" class="nav-link">Editar</a></li> 
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+                
+            <!--div com o botão que substituirá toda a nav-list quando o tamanho da tela for menor que 700px-->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="image/menu_white_36dp.svg">
+                </button>
+            </div>
+        </nav>
+
+        <!--div que substituirá a nav-list - ela aparecerá quando o botão da div mobile-menu-icon for clicado - ação será feita em js (arquivo script.js)-->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Assistir</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Recomendações</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Top 10 animes</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link">Editar</a></li> 
+             </ul>
+
+             <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <!--importando o JavaScript-->
+    <script src="script.js"></script>
 </body>
 </html>
