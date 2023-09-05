@@ -24,8 +24,15 @@ header{
   align-items: center;
 }  
 
-.logo h1{
-  color: #fff;
+.logo .bi-house{
+  fill: #fff;
+  height: 60px;
+  width: 60px;
+}
+.logo .btn{
+  opacity: 100%;
+  background-color: #0187a7;
+  border-radius: 5px;
 }
 
 .nav-list{
