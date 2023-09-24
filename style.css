@@ -19,13 +19,23 @@ header{
   padding: 1.5rem 6rem; /*o rem ajuda a deixar o site responsivo*/
 }
 
+.log-out .btn{
+  width: 35px;
+  height: 35px;
+  opacity: 90%;
+  background-color: #cf1717;
+  border-radius: 10px;
+}
+
 .logo{
   display: flex;
   align-items: center;
 }  
 
-.logo h1{
-  color: #fff;
+.btn{
+  opacity: 100%;
+  background-color: #0187a7;
+  border-radius: 5px;
 }
 
 .nav-list{
