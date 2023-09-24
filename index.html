@@ -7,24 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-    <header>`
-        <!-- classe nav que ira aparecer com a tela maior do que 700px-->
+    <header>
+        <!-- classe nav que ira aparecer com a tela maior do que 730px-->
         <nav class="nav-bar">
             <div class="logo">
-                <h1>Logo<h1>
+                <button type="button" class="btn">
+                    <a href="index.html">
+                    <img src="image/icon/home.svg"></a>
+                </button>
             </div>
 
             <div class="nav-list">
                 <ul>
-                   <li class="nav-item"><a href="#" class="nav-link">Assistir</a></li> 
-                   <li class="nav-item"><a href="#" class="nav-link">Recomendações</a></li> 
-                   <li class="nav-item"><a href="#" class="nav-link">Top 10 animes</a></li> 
-                   <li class="nav-item"><a href="#" class="nav-link">Editar</a></li> 
+                   <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <img src="image/icon/search.svg"> Pesquisa</a>
+                   </li> 
+                   <li class="nav-item"><a href="#" class="nav-link"> 
+                    <img src="image/icon/card-checklist.svg"> Minha Lista</a>
+                </li> 
+                   <li class="nav-item"><a href="#" class="nav-link">
+                    <img src="image/icon/bookmark-star.svg">Top 10 animes</a></li> 
+                   <li class="nav-item"><a href="#" class="nav-link">
+                    <img src="image/icon/stars.svg"> Recomendações</a>
+                </li>
+                   <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/person-badge.svg">Quem somos</a></li>  
                 </ul>
             </div>
 
             <div class="login-button">
-                <button><a href="#">Entrar</a></button>
+                <button><a href="#">User</a></button>
             </div>
                 
             <!--div com o botão que substituirá toda a nav-list quando o tamanho da tela for menor que 700px-->
@@ -38,14 +50,17 @@
         <!--div que substituirá a nav-list - ela aparecerá quando o botão da div mobile-menu-icon for clicado - ação será feita em js (arquivo script.js)-->
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Assistir</a></li> 
-                <li class="nav-item"><a href="#" class="nav-link">Recomendações</a></li> 
-                <li class="nav-item"><a href="#" class="nav-link">Top 10 animes</a></li> 
-                <li class="nav-item"><a href="#" class="nav-link">Editar</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/search.svg">
+                    Pesquisa</a>
+                </li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/card-checklist.svg"> Minha Lista</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/bookmark-star.svg"> Top 10 animes</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/stars.svg"> Recomendações</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/person-badge.svg"> Quem somos</a></li>  
              </ul>
 
              <div class="login-button">
-                <button><a href="#">Entrar</a></button>
+                <button><a href="#">Sair</a></button>
             </div>
         </div>
     </header>

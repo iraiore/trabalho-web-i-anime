@@ -7,7 +7,13 @@ Sites referencias:
 
 #cód e sintaxes  
 
-comentárrios = ```< !-- -- >```
+comentárrios = ```< !-- -- >```  
+
+            <div class="log-out">
+                <button type="button" class="btn">
+                <a href="#"><img src="image/icon/box-arrow-left.svg"></a>
+            </button>
+        </div>
 
 #Dúvidas   
 Como tirar a cor branca do fundo da escrita do botao entrar
