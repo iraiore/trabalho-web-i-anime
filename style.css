@@ -128,17 +128,18 @@ header{
   }
 }
 
-/*TELA LOGIN*/
+/*TELA DE LOGIN*/
 .header-login{
   display: flex;
-  margin-right: 200px;
-  margin-top: 100px;
-  width: 50%;
-  height: 70px;
+  margin-right: auto;
+  margin-top: auto;
+  width: auto;
+  height: auto;
   /*centralizando a div*/
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .header-login h1{
   color: #fff;
@@ -152,15 +153,15 @@ header{
   display: flex;
   margin-right: 200px;
   /*margin-top: 20px;*/
-  width: 50%;
-  height: 200px;
+  width:auto;
+  height: auto;
   /*centralizando a div*/
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20%;
+  margin-right: 20%;
   
 }
-.container-login .login{
+.container-login .form-login{
   /*centralizando a div*/
   margin-top: 20px;
   position: relative;
@@ -170,21 +171,52 @@ header{
 
 .mb-e .email{
   font-size: 20px;
+  /*background-color:#cf1717;*/
 }
 .mb-p .password{
   font-size: 20px;
 }
-.login .form-control{
-  font-size: 15px;
+
+.form-login .form-control{
+  font-size: 17px;
 }
 
-.login .form-check{
-
-  margin-top: 10px;
-  margin-left:30px;
-  background-color: salmon;
+.r-f {
+  display: flex;
+  width: auto;
+  height: auto;
+  /*background-color:#cf1717;*/
 }
-.btn-login .btn-primary{
+
+/*.r-f .forgot{
+  background-color:salmon;
+  flex: auto;
+}*/
+
+.r-f .forgot a{
+  text-decoration: none;
+  color: black;
+}
+
+.r-f .form-check{
+  /*background-color:salmon;*/
+  flex: auto;
+}
+
+.e-r {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: auto;
+  height: auto;
+  /*background-color:#cf1717;*/
+}
+.btn-login{
+  /*background-color:purple;*/
+  flex:auto;
+}
+
+.btn-login .btn-enter{
   width: auto;
   height: auto;
   background-color: lightblue;
@@ -194,6 +226,19 @@ header{
   font-weight: bold;
     /*centralizando a div*/
     position: relative;
-    margin-left: 170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-login .btn-register{
+  width: auto;
+  height: auto;
+  background-color: rgb(180, 230, 173);
+  font-size: 20px;
+  border-radius: 5px;
+  color:black;
+  font-weight: bold;
+    /*centralizando a div*/
+    position: relative;
+    margin-left: auto;
     margin-right: auto;
 }
