@@ -9,45 +9,39 @@
 </head>
 <body>
     <header class="header-login">
-        <h1>Registre-se ou Faça o Login</h1>
+        <h1>Faça o Login ou Registre-se</h1>
     </header>
 
     <div class="container-login">
-        <div class="div-login">
-        <form class="form-login">
-            <div class="mb-e">
-              <label for="" class="email">E-mail</label>
-              <input type="email" class="form-control" name=""  aria-describedby="emailHelpId" placeholder="abc@mail.com">
+        <form class="tela-login">
+            <div class="email">
+              <label for="id-email">E-mail</label>
+              <input type="email" class="input-email" name="id-email" id="id-email" aria-describedby="emailHelpId" placeholder="name@example.com">
             </div>
-            <br>
-            <div class="mb-p">
-              <label for="senha" class="password">Password</label>
-              <input type="password" class="form-control" name="" placeholder="digite sua senha">
+            <div class="password">
+              <label for="id-password">Senha</label>
+              <input type="password" class="input-password" name="id-password" id="id-password" placeholder="digite sua senha">
             </div>
-            <br>
             <div class="r-f">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="">
-                    <label class="form-check-label" for="checkbox">
+                <div class="remainder">
+                    <label class="id-remaninder">
+                      <input type="checkbox" class="input-remainder" name="id-remaninder" id="id-remaninder" value="checkedValue" unchecked>
                       Lembrar-me
                     </label>
                 </div>
-                <div class="forgot">
-                      <a href = "#">Esqueceu a senha?</h>
-                </div>               
+                <div class="forgot-password">
+                      <a href="#">Esqueceu a senha?</a>
+                </div>
+            </div>
+            <div class="e-r">
+                <div  class="btn-enter">
+                    <a class="enter" href="#" role="button">Entrar</a>
+                </div>
+                <div  class="btn-register">
+                    <a class="register" href="#" role="button">Registrar-se</a>
+                </div>
             </div>
         </form>
-        <div class = "e-r">
-            <div class="btn-login">
-                <button type="button" class="btn-enter">Entrar</button>
-            </div>   
-            <div class="btn-login">
-                <button type="button" class="btn-register">
-                    <a href="#">Registrar</a>
-                </button>
-            </div>                     
-        </div>        
-        </div>
-    </div><!--ontainer-login-->
+    </div>
 </body>
 </html>

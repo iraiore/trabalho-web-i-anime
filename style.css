@@ -129,31 +129,28 @@ header{
 }
 
 /*TELA DE LOGIN*/
+
+/***************CABEÇALHO***************/
 .header-login{
-  justify-content: center;
   display: flex;
-  margin-right: auto;
-  margin-top: auto;
-  width: auto;
-  height: auto;
   padding: 15px;
   /*centralizando a div*/
   position: relative;
   margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
-
-
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .header-login h1{
   /*background-color:blue;*/
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   align-items: center;
   margin: auto;
-
 }
+/***************CORPO - FORMULÁRIO***************/
 .container-login{ 
   background-color: #0187a7;
   display: flex;
@@ -163,103 +160,70 @@ header{
   position: relative;
   margin-left: 20%;
   margin-right: 20%;
-  
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;  
 }
-.container-login .form-login{
-  /*centralizando a div*/
-  margin-top: 20px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  background-color:gray;
+/***************ITENS - FORMULÁRIO***************/
+.tela-login{
+  /*display:flex;*/
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.tela-login .email{
+  padding: 10px;
 }
 
-.mb-e .email{
-  font-size: 20px;
-  /*background-color:#cf1717;*/
-}
-.mb-p .password{
-  font-size: 20px;
-}
-
-.form-login .form-control{
+.tela-login input{
   font-size: 17px;
 }
-
-.r-f {
-  display: flex;
-  width: auto;
-  height: auto;
-  /*background-color:#cf1717;*/
+.tela-login .password{
+  padding: 10px;
 }
 
-/*.r-f .forgot{
-  background-color:salmon;
-  flex: auto;
-}*/
+.r-f{
+  /*background-color:gray;*/
+  display: flex;
+  padding: 10px;
+  font-size: 15px;
+}
 
-.r-f .forgot a{
+.tela-login .remainder{
+  /*background-color:salmon;*/
+  flex:auto;
+}
+/*.tela-login .forgot-password{
+  background-color:cyan;
+  flex:auto;
+}*/
+.tela-login .forgot-password a{
+  text-decoration: none;
+  color:black;
+}
+
+.e-r{
+  /*background-color:gray;*/
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.e-r a{
   text-decoration: none;
   color: black;
 }
 
-.r-f .form-check{
-  /*background-color:salmon;*/
-  flex: auto;
-}
-
-.e-r {
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  background-color:#cf1717;
-  align-items: center;
-  padding:10px;
-}
-.btn-login{
-  background-color:purple;
-  display: flex;
-}
-
-.btn-login .btn-enter{
-  width: auto;
-  height: auto;
+.tela-login .btn-enter{
   background-color: lightblue;
-  font-size: 20px;
-  border-radius: 5px;
-  color:black;
-  font-weight: bold;
-  /*centralizando a div*/
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-  padding: 5px;
-  flex: auto;  
-}
-.btn-login .btn-register{
-  width: auto;
-  height: auto;
-  background-color: rgb(56, 180, 170);
-  font-size: 20px;
-  border-radius: 5px;
-  color:black;
-  font-weight: bold;
-  /*centralizando a div*/
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-  padding: 5px;
-  flex: auto;
-}
-
-.btn-login .btn-register a{
-text-decoration: none;
-color:black;
-}
-
-.div-login{
-  background-color: salmon;
   padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 8px 20px #464646;
 }
+
+.tela-login .btn-register{
+  background-color: rgb(118, 163, 118);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 8px 20px #464646;
+}
+
