@@ -157,10 +157,8 @@ header{
 .container-login{ 
   background-color: #0187a7;
   display: flex;
-  margin-right: 200px;
-  /*margin-top: 20px;*/
-  width:auto;
-  height: auto;
+  align-items:center;
+  justify-content: center;
   /*centralizando a div*/
   position: relative;
   margin-left: 20%;
@@ -173,6 +171,7 @@ header{
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  background-color:gray;
 }
 
 .mb-e .email{
@@ -213,13 +212,13 @@ header{
   display: flex;
   margin-top: 50px;
   margin-bottom: 20px;
-  width: auto;
-  height: auto;
-  /*background-color:#cf1717;*/
+  background-color:#cf1717;
+  align-items: center;
+  padding:10px;
 }
 .btn-login{
-  /*background-color:purple;*/
-  flex:auto;
+  background-color:purple;
+  display: flex;
 }
 
 .btn-login .btn-enter{
@@ -230,12 +229,13 @@ header{
   border-radius: 5px;
   color:black;
   font-weight: bold;
-    /*centralizando a div*/
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    padding: 5px;
+  /*centralizando a div*/
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  padding: 5px;
+  flex: auto;  
 }
 .btn-login .btn-register{
   width: auto;
@@ -245,10 +245,21 @@ header{
   border-radius: 5px;
   color:black;
   font-weight: bold;
-    /*centralizando a div*/
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    padding: 5px;
+  /*centralizando a div*/
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  padding: 5px;
+  flex: auto;
+}
+
+.btn-login .btn-register a{
+text-decoration: none;
+color:black;
+}
+
+.div-login{
+  background-color: salmon;
+  padding: 10px;
 }
