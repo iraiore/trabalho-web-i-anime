@@ -130,21 +130,27 @@ header{
 
 /*TELA DE LOGIN*/
 .header-login{
+  justify-content: center;
   display: flex;
   margin-right: auto;
   margin-top: auto;
   width: auto;
   height: auto;
+  padding: 15px;
   /*centralizando a div*/
   position: relative;
   margin-top: 10%;
   margin-left: 20%;
   margin-right: 20%;
+
+
 }
 .header-login h1{
+  /*background-color:blue;*/
   color: #fff;
   font-size: 20px;
   text-align: center;
+  align-items: center;
   margin: auto;
 
 }
@@ -228,11 +234,13 @@ header{
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    padding: 5px;
 }
 .btn-login .btn-register{
   width: auto;
   height: auto;
-  background-color: rgb(180, 230, 173);
+  background-color: rgb(56, 180, 170);
   font-size: 20px;
   border-radius: 5px;
   color:black;
@@ -241,4 +249,6 @@ header{
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    padding: 5px;
 }
