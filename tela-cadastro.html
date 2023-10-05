@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anime Discovery - Sign Up</title>
+</head>
+<body>
+    <header class="header-signInUp">
+        <h1>Registre-se</h1>
+    </header>
+    <div class="container-signInUp SignUp">
+        <form class="tela-cadastro">
+            <div class="n-s">
+                <div class="nome">
+                <label for="id-nome">Nome</label>
+                <input type="text" class="input-nome" name="id-nome" id="id-nome" placeholder="First name" required>
+                </div>
+
+                <div class="sobrenome">
+                    <label for="id-sobrenome">Sobrenome</label>
+                    <input type="text" class="input-sobrenome" name="id-sobrenome" id="id-sobrenome" placeholder="Last name" required>
+                </div>
+
+                <div class="data-nascimento">
+                    <label for="id-dataNascimento">Data Nascimento</label>
+                    <input type="date" class="input-dataNascimento" name="id-dataNascimento" id="id-dataNascimento" placeholder="DD/MM/AAAA">
+                </div>
+            </div>
+            
+            <div class="e-u">
+                <div class="phone">
+                    <label for="id-phone">WhatsApp</label>
+                    <input type="tel"
+                        class="input-phone" name="" id="id-phone" aria-describedby="helpId" placeholder="+55 (DD) 99999-9999">
+                </div>                
+                <div class="email">
+                    <label for="id-email">E-mail</label>
+                    <input type="email" class="input-email" name="id-email" id="id-email" aria-describedby="emailHelpId" placeholder="name@example.com" required>
+                </div>
+
+                <div class="username">
+                <label for="id-username">Usuário</label>
+                <input type="text"
+                    class="input-username" name="" id="id-username" aria-describedby="helpId" placeholder="user465" required>
+                </div>
+            </div>
+
+            <div class="p-cp">
+                <div class="password">
+                    <label for="id-password">Digite a Senha</label>
+                    <input type="password" class="input-password" name="id-password" id="id-password" placeholder="mín de 4 a 6 caracteres" required>
+                </div>
+
+                <div class="confirmed-password">
+                    <label for="id-confirmedPassword">Digite a senha novamente</label>
+                    <input type="password" class="input-confirmedPassword" name="id-confirmedPassword" id="id-confirmedPassword" placeholder="digite sua senha" required>
+                </div>
+                <div  class="btn-register">
+                    <a class="register" href="#" role="button">Registrar</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

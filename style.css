@@ -128,10 +128,10 @@ header{
   }
 }
 
-/*TELA DE LOGIN*/
+/*TELA DE SIGN IN - SIGN UP*/
 
 /***************CABEÇALHO***************/
-.header-login{
+.header-signInUp{
   display: flex;
   padding: 15px;
   /*centralizando a div*/
@@ -142,7 +142,7 @@ header{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.header-login h1{
+.header-signInUp h1{
   /*background-color:blue;*/
   color: #fff;
   font-size: 30px;
@@ -151,7 +151,7 @@ header{
   margin: auto;
 }
 /***************CORPO - FORMULÁRIO***************/
-.container-login{ 
+.container-signInUp{ 
   background-color: #0187a7;
   display: flex;
   align-items:center;
@@ -163,7 +163,7 @@ header{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;  
 }
-/***************ITENS - FORMULÁRIO***************/
+/***************ITENS - FORMULÁRIO - TELA SIGN IN***************/
 .tela-login{
   /*display:flex;*/
   font-size: 20px;
@@ -197,7 +197,7 @@ header{
   flex:auto;
 }*/
 .tela-login .forgot-password a{
-  text-decoration: none;
+  /*text-decoration: none;*/
   color:black;
 }
 
@@ -227,3 +227,108 @@ header{
   box-shadow: 5px 8px 20px #464646;
 }
 
+/*TELA DE SIGN UP*/
+
+/***************ITENS - FORMULÁRIO - TELA SIGN UP***************/
+.tela-cadastro{
+  display:flex;
+  font-size: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tela-cadastro input{
+  font-size: 17px;
+  border-radius:5px;
+}
+.tela-cadastro .n-s{
+  /*background-color:purple;*/
+  padding: 15px;
+  display: flex;
+  flex: auto;
+  justify-content: space-between;
+}
+.tela-cadastro .nome{
+  /*background-color:cyan;*/
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+
+}
+.tela-cadastro .sobrenome{
+  /*background-color:gray;*/
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.tela-cadastro .data-nascimento{
+  /*background-color:gray;*/
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.tela-cadastro .e-u{
+  background-color:cyan;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex: auto;
+  flex-wrap: wrap;
+}
+.tela-cadastro .phone{
+  /*background-color:gray;*/
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tela-cadastro .email{
+  /*background-color:gray;*/
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tela-cadastro .username{
+  /*background-color:gray;*/
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tela-cadastro .p-cp{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex: auto;
+
+}
+
+.tela-cadastro .password{
+  /*background-color:gray;*/
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.tela-cadastro .confirmed-password{
+  /*background-color:gray;*/
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tela-cadastro .btn-register{
+  background-color: rgb(118, 163, 118);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 8px 20px #464646;
+}
+
+.tela-cadastro .p-cp a{
+  /*cofinguração do link do botão*/
+  text-decoration: none;
+  color: black;
+}
