@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- classe nav que ira aparecer com a tela maior do que 730px-->
+        <nav class="nav-bar">
+            <div class="logo">
+                <button type="button" class="btn">
+                    <a href="index.html">
+                    <img src="image/icon/home.svg"></a>
+                </button>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                   <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <img src="image/icon/search.svg"> Pesquisa</a>
+                   </li> 
+                   <li class="nav-item"><a href="#" class="nav-link"> 
+                    <img src="image/icon/card-checklist.svg"> Minha Lista</a>
+                </li> 
+                   <li class="nav-item"><a href="#" class="nav-link">
+                    <img src="image/icon/bookmark-star.svg">Top 10 animes</a></li> 
+                   <li class="nav-item"><a href="#" class="nav-link">
+                    <img src="image/icon/stars.svg"> Recomendações</a>
+                </li>
+                   <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/person-badge.svg">Quem somos</a></li>  
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">User</a></button>
+            </div>
+                
+            <!--div com o botão que substituirá toda a nav-list quando o tamanho da tela for menor que 700px-->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="image/menu_white_36dp.svg">
+                </button>
+            </div>
+        </nav>
+
+        <!--div que substituirá a nav-list - ela aparecerá quando o botão da div mobile-menu-icon for clicado - ação será feita em js (arquivo script.js)-->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/search.svg">
+                    Pesquisa</a>
+                </li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/card-checklist.svg"> Minha Lista</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/bookmark-star.svg"> Top 10 animes</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/stars.svg"> Recomendações</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/person-badge.svg"> Quem somos</a></li>  
+             </ul>
+
+             <div class="login-button">
+                <button><a href="#">Sair</a></button>
+            </div>
+        </div>
+    </header>
+    <!--importando o JavaScript-->
+    <script src="script.js"></script>
+
+    <div class="row">
+        <h3>MAIS ASSISTIDOS</h3>
+        <div class="row-posters">
+            <img class="row-poster row-posterLarge" src="image/cartazes/aviagemdechihiro.jpg" alt=""/>
+            <img class="row-poster row-posterLarge" src="image/cartazes/dascolinaskokuriko.jpg" alt=""/>
+            <img class="row-poster row-posterLarge" src="image/cartazes/eupossoouvirooceano.jpg" alt=""/>
+            <img class="row-poster row-posterLarge" src="image/cartazes/meusvizinhososyamadas.jpg" alt=""/>
+            <img class="row-poster row-posterLarge" src="image/cartazes/omundodospequeninos.jpg" alt=""/>
+            <img class="row-poster row-posterLarge" src="image/cartazes/oreinodosgatos.jpg" alt=""/>
+            <img class="row-poster row-posterLarge" src="image/cartazes/omundodospequeninos.jpg" alt=""/>
+            <img class="row-poster row-posterLarge" src="image/cartazes/meuamigototoro.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class="row">
+        <h3>NOVIDADES</h3>
+        <div class="row-posters">
+            <img class="row-poster" src="image/cartazes/aviagemdechihiro.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/dascolinaskokuriko.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/eupossoouvirooceano.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/meusvizinhososyamadas.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/omundodospequeninos.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/oreinodosgatos.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/omundodospequeninos.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/meuamigototoro.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="row">
+        <h3>COMÉDIA</h3>
+        <div class="row-posters">
+            <img class="row-poster" src="image/cartazes/aviagemdechihiro.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/dascolinaskokuriko.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/eupossoouvirooceano.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/meusvizinhososyamadas.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/omundodospequeninos.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/oreinodosgatos.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/omundodospequeninos.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/meuamigototoro.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="row">
+        <h3>BEM AVALIADOS</h3>
+        <div class="row-posters">
+            <img class="row-poster" src="image/cartazes/aviagemdechihiro.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/dascolinaskokuriko.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/eupossoouvirooceano.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/meusvizinhososyamadas.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/omundodospequeninos.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/oreinodosgatos.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/omundodospequeninos.jpg" alt=""/>
+            <img class="row-poster" src="image/cartazes/meuamigototoro.jpg" alt=""/>
+        </div>
+    </div>
+</body>
+</html>

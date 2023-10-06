@@ -7,6 +7,9 @@
   margin:0;
   font-family: 'Inter', sans-serif;/*caso o navegador nao interprete a fonte Inter, será utilizada a fonte padrão sans-serif*/
 }
+body{
+  background-color:#302c2c;
+}
 
 header{
   background-color: #24252a;
@@ -230,6 +233,9 @@ header{
 /*TELA DE SIGN UP*/
 
 /***************ITENS - FORMULÁRIO - TELA SIGN UP***************/
+/*.SignUp{
+  object-fit: contain;
+}*/
 .tela-cadastro{
   display:flex;
   font-size: 20px;
@@ -332,3 +338,40 @@ header{
   text-decoration: none;
   color: black;
 }
+/*TELA INICIAL*/
+
+/***************CLASS ROW***************/
+.row .row-posterLarge{
+  width: 100%;
+  object-fit: contain;
+  max-height: 350px;
+  margin-right: 5px;
+  transition: transform 450ms;
+}
+
+.row-poster{
+  width: 100%;
+  object-fit: contain;
+  max-height: 220px;
+  margin-right: 1px;
+  transition: transform 450ms;
+}
+.row-posters{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.row-poster:hover{
+ transform: scale(1.10);
+}
+
+.row-posters::-webkit-scrollbar{
+  /*display: none;*/
+  overflow: hidden;
+}
+.row{
+   color:white;
+   margin-left: 20px;
+}
+
