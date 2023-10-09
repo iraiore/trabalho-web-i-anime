@@ -1,35 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A Viagem de Chihiro</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .fundocomimagem {background-image: url('fundofilmes/aviagemdechihiro.jpg');}
+    </style>
 
 </head>
 <body>
+
+    <header>
+        <!-- classe nav que ira aparecer com a tela maior do que 730px-->
+        <nav class="nav-bar">
+            <div class="logo">
+                <button type="button" class="btn">
+                    <a href="index.html">
+                    <img src="image/icon/home.svg"></a>
+                </button>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                   <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <img src="image/icon/search.svg"> Pesquisa</a>
+                   </li> 
+                   <li class="nav-item"><a href="#" class="nav-link"> 
+                    <img src="image/icon/card-checklist.svg"> Minha Lista</a>
+                </li> 
+                   <li class="nav-item"><a href="#" class="nav-link">
+                    <img src="image/icon/bookmark-star.svg">Top 10 animes</a></li> 
+                   <li class="nav-item"><a href="#" class="nav-link">
+                    <img src="image/icon/stars.svg"> Recomendações</a>
+                </li>
+                   <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/person-badge.svg">Quem somos</a></li>  
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">User</a></button>
+            </div>
+                
+            <!--div com o botão que substituirá toda a nav-list quando o tamanho da tela for menor que 700px-->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="image/menu_white_36dp.svg">
+                </button>
+            </div>
+        </nav>
+
+        <!--div que substituirá a nav-list - ela aparecerá quando o botão da div mobile-menu-icon for clicado - ação será feita em js (arquivo script.js)-->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/search.svg">
+                    Pesquisa</a>
+                </li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/card-checklist.svg"> Minha Lista</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/bookmark-star.svg"> Top 10 animes</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/stars.svg"> Recomendações</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/person-badge.svg"> Quem somos</a></li>  
+             </ul>
+
+             <div class="login-button">
+                <button><a href="#">Sair</a></button>
+            </div>
+        </div>
+    </header>
+
+    <!--importando o JavaScript-->
+    <script src="script.js"></script>
+
     <div class="fundocomimagem">
     
-
-    <div id="site">
-        <div id="header">
-            <div class="menu">
-                <div class="menu-dropdown" style="float:left;">
-                    <button class="botao-menu">Anime</button>
-                    <div class="lista-opcoes">
-                    <a href="#">Assistir</a>
-                    <a href="#">Recomendações</a>
-                    <a href="#">Top 10 animes</a>
-                    <a href="#">editar</a>
-                    <a href="#">editar</a>
-                </div>   
-            </div>      
-        </div>
-    </div>
-
-    <p>"A Viagem de Chihiro" é uma animação do Studio Ghibli dirigida por Hayao Miyazaki. O filme conta a história de Chihiro, uma jovem que, ao se perder em um mundo mágico, deve trabalhar em um misterioso banho público para salvar seus pais transformados em porcos. Ela embarca em uma jornada de autodescoberta, enfrentando desafios e encontrando personagens únicos enquanto luta para recuperar sua identidade e resgatar sua família. O filme explora temas de coragem, amadurecimento e a magia que reside na imaginação de uma criança. É uma obra-prima do cinema de animação que cativa espectadores de todas as idades.</p>
+    <p>
+    <button>Assitir Agora</button>
+    <br>
+    <button>Adicionar a Minha Lista</button>
+    <br><br>
+    <mark>"A Viagem de Chihiro" é uma animação do Studio Ghibli dirigida por Hayao Miyazaki. O filme conta a história de Chihiro, uma jovem que, ao se perder em um mundo mágico, deve trabalhar em um misterioso banho público para salvar seus pais transformados em porcos. Ela embarca em uma jornada de autodescoberta, enfrentando desafios e encontrando personagens únicos enquanto luta para recuperar sua identidade e resgatar sua família. O filme explora temas de coragem, amadurecimento e a magia que reside na imaginação de uma criança. É uma obra-prima do cinema de animação que cativa espectadores de todas as idades.</mark></p>
 
     </div>
+
+    <div class="sugestoes">
+
+    </div>
+
 </body>
 </html>
