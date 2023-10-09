@@ -154,18 +154,71 @@ mark {
   opacity: 75%;
 }
 
-.fundocomimagem{
+.textosugestao{
   background-color: #24252a;
   max-width: 1220px;
+  height: 50px;
   width: 100%;
-  height: 690px;
   margin: 0 auto;
-  align-items:end;
   display: flex;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  color: white;
+}
+
+.sugestoes{
+  background-color: #24252a;
+  max-width: 1220px;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
   text-align: justify;
+  font-size: 25px;
+  color: white;
+}
+
+.nomesugestoes{
+  background-color: #24252a;
+  max-width: 1220px;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.filmes{
+  width: 280px;
+  height: 387px;
+  margin: 0 auto;
+  display: flex;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.nomefilmes{
+  width: 280px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 30px;
+  text-align: center;
   font-size: 25px;
   color: white;
 }
