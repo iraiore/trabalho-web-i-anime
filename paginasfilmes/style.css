@@ -186,7 +186,7 @@ mark {
   background-color: #24252a;
   max-width: 1220px;
   width: 100%;
-  height: 100px;
+  height: 130px;
   margin: 0 auto;
   display: flex;
   padding-left: 30px;
@@ -212,7 +212,7 @@ mark {
 
 .nomefilmes{
   width: 280px;
-  height: 100px;
+  height: 130px;
   margin: 0 auto;
   display: flex;
   padding-left: 22px;
