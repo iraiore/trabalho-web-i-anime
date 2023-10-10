@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anime Discovery Sign In</title>
+</head>
+<body>
+    <header class="header-signInUp">
+        <h1>Faça o Login ou Registre-se</h1>
+    </header>
+
+    <div class="container-signInUp SignIn">
+        <form class="tela-login">
+            <div class="email">
+              <label for="id-email">E-mail</label>
+              <input type="email" class="input-email" name="id-email" id="id-email" aria-describedby="emailHelpId" placeholder="name@example.com" required>
+            </div>
+            <div class="password">
+              <label for="id-password">Senha</label>
+              <input type="password" class="input-password" name="id-password" id="id-password" placeholder="digite sua senha" required>
+            </div>
+            <div class="r-f">
+                <div class="remainder">
+                    <label class="id-remainder">
+                      <input type="checkbox" class="input-remainder" name="id-remainder" id="id-remaninder" value="checkedValue" unchecked>
+                      Lembrar-me
+                    </label>
+                </div>
+                <div class="forgot-password">
+                      <a href="#">Esqueci minha senha?</a>
+                </div>
+            </div>
+            <div class="e-r">
+                <div  class="btn-enter">
+                    <a class="enter" href="#" role="button">Entrar</a>
+                </div>
+                <div  class="btn-register">
+                    <a class="register" href="#" role="button">Registrar-se</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
