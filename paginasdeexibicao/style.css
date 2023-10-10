@@ -1,0 +1,162 @@
+/*importando uma fonte do goole*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap');
+
+/*zerando todos os componentes*/
+*{
+  padding: 0;
+  margin:0;
+  font-family: 'Inter', sans-serif;/*caso o nagegador nao interprete a fonte Inter, será utilizada a fonte padrão sans-serif*/
+}
+
+header{
+  background-color: #24252a;
+  box-shadow: 0px 3px 10px #464646;
+}
+
+body{
+  background-color: black;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between; /*distanciando as tres divs do heades*/
+  padding: 1.5rem 6rem; /*o rem ajuda a deixar o site responsivo*/
+}
+
+.log-out .btn{
+  width: 35px;
+  height: 35px;
+  opacity: 90%;
+  background-color: #cf1717;
+  border-radius: 10px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}  
+
+.btn{
+  opacity: 100%;
+  background-color: #0187a7;
+  border-radius: 5px;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item{
+  margin: 0 15px;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.login-button button{
+  border: none;
+  background-color: #0187a7;
+  padding: 10px 15px;
+  border-radius: 5px; /*configura o arredondamento no botão*/
+}
+
+.login-button button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+/*este menu somente irá aparecer quando ao tamanho da tela for menor que 700px - script.js*/
+.mobile-menu-icon{
+  display: none;
+}
+/*este menu somente irá aparecer quando ao tamanho da tela for menor que 700px - script.js*/
+.mobile-menu{
+  display: none;
+}
+
+/*configurando o menu quando a tela for menor que 730px*/
+@media screen and (max-width: 730px){
+  .nav-bar{
+    padding: 1.5rem 4rem;
+  }
+  .nav-item{
+    display: none;
+  }
+
+  .login-button{
+    display: none;
+  }
+
+  .mobile-menu-icon{
+    display: block;
+  }
+
+  .mobile-menu-icon button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+  }
+  .mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-menu .nav-item{
+    display: block;
+    padding: 1.2rem;
+  }
+  .mobile-menu .login-button{
+    display: block;
+    padding: 1rem 2rem;
+  }
+  .mobile-menu .login-button button{
+    width: 100%;/*quando o menu for aberto, o botão ocupará toda a tela*/
+  }
+  /*classe que sera chamada como java script*/
+  .open{
+    display: block;
+  }
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+h1{
+  display: flex;
+  color: white;
+  position: absolute;
+  font-size: 48px;
+  left: 50px;
+  top: 120px;
+}
+
+h2{
+  display: flex;
+  color: white;
+  position: absolute;
+  max-width: 80%;
+  left: 50px;
+  top: 120px;
+}
+
+mark {
+  background-color: black;
+  color: white;
+  opacity: 75%;
+}
