@@ -346,23 +346,23 @@ header{
 /*TELA INICIAL*/
 
 /***************CLASS ROW - TELA INICIAL***************/
-.row .row-posterLarge{
+/*.row .row-posterLarge{
   width: 100%;
   object-fit: contain;
   max-height: 350px;
   margin-right: 5px;
   transition: transform 450ms;
-}
+}*/
 
 .row-poster{
   width: 100%;
   object-fit: contain;
-  max-height: 220px;
+  max-height: 350px;
   margin-right: 1px;
   transition: transform 450ms;
 }
 .row-posters{
-  display: flex;
+  display: flex;  
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px;
