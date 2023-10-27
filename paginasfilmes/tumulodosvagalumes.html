@@ -8,6 +8,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         .fundocomimagem {background-image: url('fundofilmes/tumulodosvagalumes.jpg');}
+        #btassistir {
+            background-color: rgb(243, 243, 247);
+            color: rgb(3, 3, 3);
+            font-size: 20px;
+        }
+        #btminhalista {
+            background-color: rgb(243, 243, 247);
+            color: rgb(3, 3, 3);
+            font-size: 20px;
+        }
     </style>
 
 </head>
@@ -77,9 +87,9 @@
     <div class="fundocomimagem">
     
     <p>
-    <button>Assitir Agora</button>
-    <br>
-    <button>Adicionar a Minha Lista</button>
+        <input type="button" value=" Assistir Agora " id="btassistir" onmouseenter="entrar()" onmouseout="sair()" onclick="assistir()">
+        <br>
+        <input type="button" value="   Minha Lista    " id="btminhalista" onmouseenter="entrar()" onmouseout="sair()" onclick="minhalista()">
     <br><br>
     <mark>"Túmulo dos Vagalumes" é um filme de animação japonês que narra a emocionante história de dois irmãos, Setsuko e Seita, durante os últimos dias da Segunda Guerra Mundial. Após perderem sua casa e sua mãe em um bombardeio, eles lutam pela sobrevivência em um Japão devastado pela guerra. O filme é uma representação comovente da força do amor fraternal, bem como uma dolorosa reflexão sobre as consequências da guerra, a escassez de recursos e a resiliência das crianças em face da adversidade.</mark></p>
 
@@ -88,10 +98,10 @@
     <div class="textosugestao"><h1>Sugestões</h1></div>
 
     <div class="sugestoes">
-        <div class="filmes"><img src="image/cartazes/nausicaa.jpg"></div>
-        <div class="filmes"><img src="image/cartazes/porcorosso.jpg"></div>
-        <div class="filmes"><img src="image/cartazes/princesamononoke.jpg"></div>
-        <div class="filmes"><img src="image/cartazes/aviagemdechihiro.jpg"></div>
+        <div class="filmes"><img src="image/cartazes/nausicaa.jpg" id="sugestao01" onmouseenter="alterarcursor()" onclick="abrir('sugestao01')"></div>
+        <div class="filmes"><img src="image/cartazes/porcorosso.jpg" id="sugestao02" onmouseenter="alterarcursor()" onclick="abrir('sugestao02')"></div>
+        <div class="filmes"><img src="image/cartazes/princesamononoke.jpg" id="sugestao03" onmouseenter="alterarcursor()" onclick="abrir('sugestao03')"></div>
+        <div class="filmes"><img src="image/cartazes/aviagemdechihiro.jpg" id="sugestao04" onmouseenter="alterarcursor()" onclick="abrir('sugestao04')"></div>
     </div>
     
     <div class="nomesugestoes">
@@ -100,6 +110,44 @@
         <div class="nomefilmes"><p>Princesa Mononoke</p></div>
         <div class="nomefilmes"><p>A Viagem de Chihiro</p></div>
     </div>
+
+    <script>
+        function assistir(){
+            window.location.href="paginasdeexibicao/tumulodosvagalumes.html"
+        }
+        function minhalista(){
+            var minhalista = window.document.getElementById('btminhalista')
+            minhalista.style.background ="green"
+        }
+        function alterarcursor(){
+            var meuElemento = document.getElementById("btassistir");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("btminhalista");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao01");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao02");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao03");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao04");
+            meuElemento.style.cursor = "pointer";
+        }
+        function abrir(id){
+            if(id=='sugestao01'){
+                window.location.href="nausicaa.html"
+            }
+            if(id=='sugestao02'){
+                window.location.href="porcorosso.html"
+            }
+            if(id=='sugestao03'){
+                window.location.href="princesamononoke.html"
+            }
+            if(id=='sugestao04'){
+                window.location.href="aviagemdechihiro.html"
+            }
+        }
+    </script>
 
 </body>
 </html>

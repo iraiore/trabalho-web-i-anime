@@ -8,6 +8,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         .fundocomimagem {background-image: url('fundofilmes/memoriasdeontem.jpg');}
+        #btassistir {
+            background-color: rgb(243, 243, 247);
+            color: rgb(3, 3, 3);
+            font-size: 20px;
+        }
+        #btminhalista {
+            background-color: rgb(243, 243, 247);
+            color: rgb(3, 3, 3);
+            font-size: 20px;
+        }
     </style>
 
 </head>
@@ -77,9 +87,9 @@
     <div class="fundocomimagem">
     
     <p>
-    <button>Assitir Agora</button>
-    <br>
-    <button>Adicionar a Minha Lista</button>
+        <input type="button" value=" Assistir Agora " id="btassistir" onmouseenter="entrar()" onmouseout="sair()" onclick="assistir()">
+        <br>
+        <input type="button" value="   Minha Lista    " id="btminhalista" onmouseenter="entrar()" onmouseout="sair()" onclick="minhalista()">
     <br><br>
     <mark>"Memórias de Ontem" (também conhecido como "Only Yesterday" ou "Omohide Poro Poro") é um filme do Studio Ghibli que segue a história de Taeko, uma mulher que decide passar suas férias na zona rural, refletindo sobre suas memórias de infância e seu crescimento pessoal. O filme alterna entre o presente e o passado de Taeko, explorando suas experiências e desafios ao longo da vida. "Memórias de Ontem" aborda temas de nostalgia, autodescoberta e a busca pela verdadeira felicidade em uma narrativa sensível e cativante.</mark></p>
 
@@ -88,10 +98,10 @@
     <div class="textosugestao"><h1>Sugestões</h1></div>
 
     <div class="sugestoes">
-        <div class="filmes"><img src="image/cartazes/eupossoouvirooceano.jpg"></div>
-        <div class="filmes"><img src="image/cartazes/oreinodosgatos.jpg"></div>
-        <div class="filmes"><img src="image/cartazes/theboyandtheheron.jpg"></div>
-        <div class="filmes"><img src="image/cartazes/vidasaovento.jpg"></div>
+        <div class="filmes"><img src="image/cartazes/eupossoouvirooceano.jpg" id="sugestao01" onmouseenter="alterarcursor()" onclick="abrir('sugestao01')"></div>
+        <div class="filmes"><img src="image/cartazes/oreinodosgatos.jpg" id="sugestao02" onmouseenter="alterarcursor()" onclick="abrir('sugestao02')"></div>
+        <div class="filmes"><img src="image/cartazes/theboyandtheheron.jpg" id="sugestao03" onmouseenter="alterarcursor()" onclick="abrir('sugestao03')"></div>
+        <div class="filmes"><img src="image/cartazes/vidasaovento.jpg" id="sugestao04" onmouseenter="alterarcursor()" onclick="abrir('sugestao04')"></div>
     </div>
     
     <div class="nomesugestoes">
@@ -100,6 +110,44 @@
         <div class="nomefilmes"><p>The Boy and The Heron</p></div>
         <div class="nomefilmes"><p>Vidas ao Vento</p></div>
     </div>
+
+    <script>
+        function assistir(){
+            window.location.href="paginasdeexibicao/memoriasdeontem.html"
+        }
+        function minhalista(){
+            var minhalista = window.document.getElementById('btminhalista')
+            minhalista.style.background ="green"
+        }
+        function alterarcursor(){
+            var meuElemento = document.getElementById("btassistir");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("btminhalista");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao01");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao02");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao03");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao04");
+            meuElemento.style.cursor = "pointer";
+        }
+        function abrir(id){
+            if(id=='sugestao01'){
+                window.location.href="eupossoouvirooceano.html"
+            }
+            if(id=='sugestao02'){
+                window.location.href="oreinodosgatos.html"
+            }
+            if(id=='sugestao03'){
+                window.location.href="theboyandtheheron.html"
+            }
+            if(id=='sugestao04'){
+                window.location.href="vidasaovento.html"
+            }
+        }
+    </script>
 
 </body>
 </html>
