@@ -8,6 +8,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         .fundocomimagem {background-image: url('fundofilmes/ponyo.jpg');}
+        #btassistir {
+            background-color: rgb(243, 243, 247);
+            color: rgb(3, 3, 3);
+            font-size: 20px;
+        }
+        #btminhalista {
+            background-color: rgb(243, 243, 247);
+            color: rgb(3, 3, 3);
+            font-size: 20px;
+        }
     </style>
 
 </head>
@@ -77,9 +87,9 @@
     <div class="fundocomimagem">
     
     <p>
-    <button>Assitir Agora</button>
-    <br>
-    <button>Adicionar a Minha Lista</button>
+        <input type="button" value=" Assistir Agora " id="btassistir" onmouseenter="entrar()" onmouseout="sair()" onclick="assistir()">
+        <br>
+        <input type="button" value="   Minha Lista    " id="btminhalista" onmouseenter="entrar()" onmouseout="sair()" onclick="minhalista()">
     <br><br>
     <mark>"Ponyo: Uma Amizade que Veio do Mar" é uma adorável animação do Studio Ghibli que segue a história de Sosuke, um menino que faz amizade com uma peixinha dourada chamada Ponyo. No entanto, quando Ponyo desenvolve o desejo de se tornar humana, seu desejo desencadeia eventos mágicos que ameaçam o equilíbrio do mundo. O filme é uma celebração da amizade, imaginação e conexão com a natureza, repleto de elementos fantásticos e emocionantes aventuras.</mark></p>
 
@@ -88,10 +98,10 @@
     <div class="textosugestao"><h1>Sugestões</h1></div>
 
     <div class="sugestoes">
-        <div class="filmes"><img src="image/cartazes/ayaeabruxa.jpg"></div>
-        <div class="filmes"><img src="image/cartazes/meusvizinhososyamadas.jpg"></div>
-        <div class="filmes"><img src="image/cartazes/omundodospequeninos.jpg"></div>
-        <div class="filmes"><img src="image/cartazes/pompoko.jpg"></div>
+        <div class="filmes"><img src="image/cartazes/ayaeabruxa.jpg" id="sugestao01" onmouseenter="alterarcursor()" onclick="abrir('sugestao01')"></div>
+        <div class="filmes"><img src="image/cartazes/meusvizinhososyamadas.jpg" id="sugestao02" onmouseenter="alterarcursor()" onclick="abrir('sugestao02')"></div>
+        <div class="filmes"><img src="image/cartazes/omundodospequeninos.jpg" id="sugestao03" onmouseenter="alterarcursor()" onclick="abrir('sugestao03')"></div>
+        <div class="filmes"><img src="image/cartazes/pompoko.jpg" id="sugestao04" onmouseenter="alterarcursor()" onclick="abrir('sugestao04')"></div>
     </div>
     
     <div class="nomesugestoes">
@@ -100,6 +110,44 @@
         <div class="nomefilmes"><p>O Mundo dos Pequeninos</p></div>
         <div class="nomefilmes"><p>Pompoko - A Grande Batalha dos Guaxinins</p></div>
     </div>
+
+    <script>
+        function assistir(){
+            window.location.href="paginasdeexibicao/ponyo.html"
+        }
+        function minhalista(){
+            var minhalista = window.document.getElementById('btminhalista')
+            minhalista.style.background ="green"
+        }
+        function alterarcursor(){
+            var meuElemento = document.getElementById("btassistir");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("btminhalista");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao01");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao02");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao03");
+            meuElemento.style.cursor = "pointer";
+            var meuElemento = document.getElementById("sugestao04");
+            meuElemento.style.cursor = "pointer";
+        }
+        function abrir(id){
+            if(id=='sugestao01'){
+                window.location.href="ayaeabruxa.html"
+            }
+            if(id=='sugestao02'){
+                window.location.href="meusvizinhososyamadas.html"
+            }
+            if(id=='sugestao03'){
+                window.location.href="omundodospequeninos.html"
+            }
+            if(id=='sugestao04'){
+                window.location.href="pompoko.html"
+            }
+        }
+    </script>
 
 </body>
 </html>
