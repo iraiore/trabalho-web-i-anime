@@ -474,7 +474,7 @@ header{
   color: black;
 }
 
-.tela-redefinir .btn-redefine{
+.tela-redefinir .btn-redefinemsg{
   background-color: rgb(118, 163, 118);
   padding: 10px;
   margin-left: 40%;
@@ -483,4 +483,11 @@ header{
   border-radius: 10px;
   box-shadow: 5px 8px 20px #464646;
   text-align: center;
+}
+
+.tela-redefinir .e-r{
+  /*background-color:gray;*/
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
 }
