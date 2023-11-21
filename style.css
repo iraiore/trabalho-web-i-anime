@@ -493,3 +493,25 @@ header{
   padding: 20px;
   justify-content: space-between;
 }
+
+
+/***************CLASS ROW - MINHA LISTA***************/
+.row-poster-ml{
+  width: 100%;
+  object-fit: contain;
+  max-height: 350px;
+  margin-right: 5px;
+  transition: transform 450ms;
+}
+.row-posters-mylist{
+  display: flex;  
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  /*width: 50% ;*/
+}
+
+
+.row-poster:hover{
+ transform: scale(1.10);
+}
