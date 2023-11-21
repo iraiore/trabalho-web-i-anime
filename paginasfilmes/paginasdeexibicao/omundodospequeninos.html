@@ -1,27 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>O Mundo dos Pequeninos</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        h2{
+            position:flex;
+            padding-top: 630px;
+            padding-left: 50px;
+        }
+    </style>
+
 </head>
 <body>
-    <div id="site">
-        <div id="header">
-            <div class="menu">
-                <div class="menu-dropdown" style="float:left;">
-                    <button class="botao-menu">Anime</button>
-                    <div class="lista-opcoes">
-                    <a href="#">Assistir</a>
-                    <a href="#">Recomendações</a>
-                    <a href="#">Top 10 animes</a>
-                    <a href="#">editar</a>
-                    <a href="#">editar</a>
-                </div>   
-            </div>      
+
+    <header>
+        <!-- classe nav que ira aparecer com a tela maior do que 730px-->
+        <nav class="nav-bar">
+            <div class="logo">
+                <button type="button" class="btn">
+                    <a href="index.html">
+                    <img src="image/icon/home.svg"></a>
+                </button>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                   <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <img src="image/icon/search.svg"> Pesquisa</a>
+                   </li> 
+                   <li class="nav-item"><a href="#" class="nav-link"> 
+                    <img src="image/icon/card-checklist.svg"> Minha Lista</a>
+                </li> 
+                   <li class="nav-item"><a href="#" class="nav-link">
+                    <img src="image/icon/bookmark-star.svg">Top 10 animes</a></li> 
+                   <li class="nav-item"><a href="#" class="nav-link">
+                    <img src="image/icon/stars.svg"> Recomendações</a>
+                </li>
+                   <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/person-badge.svg">Quem somos</a></li>  
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">User</a></button>
+            </div>
+                
+            <!--div com o botão que substituirá toda a nav-list quando o tamanho da tela for menor que 700px-->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="image/menu_white_36dp.svg">
+                </button>
+            </div>
+        </nav>
+
+        <!--div que substituirá a nav-list - ela aparecerá quando o botão da div mobile-menu-icon for clicado - ação será feita em js (arquivo script.js)-->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/search.svg">
+                    Pesquisa</a>
+                </li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/card-checklist.svg"> Minha Lista</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/bookmark-star.svg"> Top 10 animes</a></li> 
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/stars.svg"> Recomendações</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/person-badge.svg"> Quem somos</a></li>  
+             </ul>
+
+             <div class="login-button">
+                <button><a href="#">Sair</a></button>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <!--importando o JavaScript-->
+    <script src="script.js"></script>
+
+
+    <img src="image/Studio-Ghibli-Logo.jpg">
+    <h1>O Mundo dos Pequeninos</h1>
 </body>
 </html>
