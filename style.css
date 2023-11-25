@@ -515,3 +515,85 @@ header{
 .row-poster:hover{
  transform: scale(1.10);
 }
+
+/***************QUEM SOMOS***************/
+.quem-somos{
+  box-shadow: 2px 4px 6px 8px #855353;
+  background-color:rgb(49, 61, 61);
+  margin-top: 2.5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  }
+
+  .historia{
+    /*background-color:blue;*/
+    /*margin-right: 40%;*/
+  }
+  
+  .quem-somos .sec-hist{
+    display: flex;
+  }
+  .quem-somos h1{
+    /*background: blue;*/
+    text-align: center;
+    color:white;
+    padding: 10px;
+    font-size: 50px
+    
+  }
+  .quem-somos .our-story{
+    /*background: green;*/
+    text-align: justify;
+    color: salmon;
+    padding: 10px;
+    font-size: 40px
+  }
+
+  .quem-somos h3{
+    /*background: blue;*/
+    text-align: center;
+    color:rgb(228, 186, 181);
+    padding: 50px 10px 10px 10px;
+    font-size: 25px    
+  }
+  .quem-somos p{
+    /*background: blue;*/
+    text-align: justify;
+    color:rgb(148, 128, 128);
+    padding: 20px;
+    font-size: 20px;
+  }
+  
+  .quem-somos .our-pourpose{
+    /*background: blue;*/
+    text-align:end;
+    color: salmon;
+    padding: 50px 100px 10px 10px;
+    font-size: 40px
+  }
+  .quem-somos .sec-pourpose{
+    display: flex;
+  }
+  .quem-somos .we-are{
+    /*background: green;*/
+    text-align: center;
+    color: salmon;
+    padding: 50px 10px 10px 10px;
+    font-size: 40px
+  }
+
+  .quem-somos .founders{
+    /*background: green;*/
+    text-align: center;
+    color: salmon;
+    padding: 30px 10px 10px 10px;
+    font-size: 40px
+  }
+  .founders h3{
+    /*background: blue;*/
+    text-align: center;
+    color:rgb(228, 186, 181);
+    padding: 5px 10px 10px 10px;
+    font-size: 25px    
+  }  
