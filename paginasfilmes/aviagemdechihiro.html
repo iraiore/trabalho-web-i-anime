@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,25 @@
     <title>A Viagem de Chihiro</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        .fundocomimagem {background-image: url('fundofilmes/aviagemdechihiro.jpg');}
+        .fundocomimagem {
+            background-image: url('fundofilmes/aviagemdechihiro.jpg');
+        }
+
         #btassistir {
             background-color: rgb(243, 243, 247);
             color: rgb(3, 3, 3);
             font-size: 20px;
         }
+
         #btminhalista {
             background-color: rgb(243, 243, 247);
             color: rgb(3, 3, 3);
             font-size: 20px;
         }
-        
     </style>
 
 </head>
+
 <body>
 
     <header>
@@ -30,32 +35,33 @@
             <div class="logo">
                 <button type="button" class="btn">
                     <a href="../tela-inicial.html">
-                    <img src="image/icon/home.svg"></a>
+                        <img src="image/icon/home.svg"></a>
                 </button>
             </div>
 
             <div class="nav-list">
                 <ul>
-                   <li class="nav-item">
-                    <a href="#" class="nav-link">
-                    <img src="image/icon/search.svg"> Pesquisa</a>
-                   </li> 
-                   <li class="nav-item"><a href="#" class="nav-link"> 
-                    <img src="image/icon/card-checklist.svg"> Minha Lista</a>
-                </li> 
-                   <li class="nav-item"><a href="#" class="nav-link">
-                    <img src="image/icon/bookmark-star.svg">Top 10 animes</a></li> 
-                   <li class="nav-item"><a href="#" class="nav-link">
-                    <img src="image/icon/stars.svg"> Recomendações</a>
-                </li>
-                   <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/person-badge.svg">Quem somos</a></li>  
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="image/icon/search.svg"> Pesquisa</a>
+                    </li>
+                    <li class="nav-item"><a href="../tela-minha-lista.html" class="nav-link">
+                            <img src="image/icon/card-checklist.svg"> Minha Lista</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <img src="image/icon/bookmark-star.svg">Top 10 animes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <img src="image/icon/stars.svg"> Recomendações</a>
+                    </li>
+                    <li class="nav-item"><a href="../tela-quem-somos.html" class="nav-link"><img src="image/icon/person-badge.svg">Quem
+                            somos</a></li>
                 </ul>
             </div>
 
             <div class="login-button">
-                <button><a href="#">User</a></button>
+                <button><a href="../tela-login.html">Sair</a></button>
             </div>
-                
+
             <!--div com o botão que substituirá toda a nav-list quando o tamanho da tela for menor que 700px-->
             <div class="mobile-menu-icon">
                 <button onclick="menuShow()">
@@ -68,16 +74,21 @@
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/search.svg">
-                    Pesquisa</a>
-                </li> 
-                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/card-checklist.svg"> Minha Lista</a></li> 
-                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/bookmark-star.svg"> Top 10 animes</a></li> 
-                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/stars.svg"> Recomendações</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/person-badge.svg"> Quem somos</a></li>  
-             </ul>
+                        Pesquisa</a>
+                </li>
+                <li class="nav-item"><a href="../tela-minha-lista.html" class="nav-link"><img
+                            src="image/icon/card-checklist.svg"> Minha Lista</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/bookmark-star.svg"> Top 10
+                        animes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><img src="image/icon/stars.svg"> Recomendações</a>
+                </li>
+                <li class="nav-item"><a href="../tela-quem-somos.html" class="nav-link"><img
+                            src="image/icon/person-badge.svg"> Quem somos</a>
+                </li>
+            </ul>
 
-             <div class="login-button">
-                <button><a href="#">Sair</a></button>
+            <div class="login-button">
+                <button><a href="../tela-login.html">Sair</a></button>
             </div>
         </div>
     </header>
@@ -86,40 +97,63 @@
     <script src="script.js"></script>
 
     <div class="fundocomimagem">
-    
-    <p>
-    <input type="button" value=" Assistir Agora " id="btassistir" onmouseenter="entrar()" onmouseout="sair()" onclick="assistir()">
-    <br>
-    <input type="button" value="   Minha Lista    " id="btminhalista" onmouseenter="entrar()" onmouseout="sair()" onclick="minhalista()">
-    <br><br>
-    <mark>"A Viagem de Chihiro" é uma animação do Studio Ghibli dirigida por Hayao Miyazaki. O filme conta a história de Chihiro, uma jovem que, ao se perder em um mundo mágico, deve trabalhar em um misterioso banho público para salvar seus pais transformados em porcos. Ela embarca em uma jornada de autodescoberta, enfrentando desafios e encontrando personagens únicos enquanto luta para recuperar sua identidade e resgatar sua família. O filme explora temas de coragem, amadurecimento e a magia que reside na imaginação de uma criança. É uma obra-prima do cinema de animação que cativa espectadores de todas as idades.</mark></p>
+
+        <p>
+            <input type="button" value=" Assistir Agora " id="btassistir" onmouseenter="entrar()" onmouseout="sair()"
+                onclick="assistir()">
+            <br>
+            <input type="button" value="   Minha Lista    " id="btminhalista" onmouseenter="entrar()"
+                onmouseout="sair()" onclick="minhalista()">
+            <br><br>
+            <mark>"A Viagem de Chihiro" é uma animação do Studio Ghibli dirigida por Hayao Miyazaki. O filme conta a
+                história de Chihiro, uma jovem que, ao se perder em um mundo mágico, deve trabalhar em um misterioso
+                banho público para salvar seus pais transformados em porcos. Ela embarca em uma jornada de
+                autodescoberta, enfrentando desafios e encontrando personagens únicos enquanto luta para recuperar sua
+                identidade e resgatar sua família. O filme explora temas de coragem, amadurecimento e a magia que reside
+                na imaginação de uma criança. É uma obra-prima do cinema de animação que cativa espectadores de todas as
+                idades.</mark>
+        </p>
 
     </div>
-    
-    <div class="textosugestao"><h1>Sugestões</h1></div>
+
+    <div class="textosugestao">
+        <h1>Sugestões</h1>
+    </div>
 
     <div class="sugestoes">
-        <div class="filmes"><img src="image/cartazes/contosdeterramar.jpg" id="sugestao01" onmouseenter="alterarcursor()" onclick="abrir('sugestao01')"></div>
-        <div class="filmes"><img src="image/cartazes/ocasteloanimado.jpg" id="sugestao02" onmouseenter="alterarcursor()" onclick="abrir('sugestao02')"></div>
-        <div class="filmes"><img src="image/cartazes/ocastelonoceu.jpg" id="sugestao03" onmouseenter="alterarcursor()" onclick="abrir('sugestao03')"></div>
-        <div class="filmes"><img src="image/cartazes/oservicodeentregasdakiki.jpg" id="sugestao04" onmouseenter="alterarcursor()" onclick="abrir('sugestao04')"></div>
+        <div class="filmes"><img src="image/cartazes/contosdeterramar.jpg" id="sugestao01"
+                onmouseenter="alterarcursor()" onclick="abrir('sugestao01')"></div>
+        <div class="filmes"><img src="image/cartazes/ocasteloanimado.jpg" id="sugestao02" onmouseenter="alterarcursor()"
+                onclick="abrir('sugestao02')"></div>
+        <div class="filmes"><img src="image/cartazes/ocastelonoceu.jpg" id="sugestao03" onmouseenter="alterarcursor()"
+                onclick="abrir('sugestao03')"></div>
+        <div class="filmes"><img src="image/cartazes/oservicodeentregasdakiki.jpg" id="sugestao04"
+                onmouseenter="alterarcursor()" onclick="abrir('sugestao04')"></div>
     </div>
-    
+
     <div class="nomesugestoes">
-        <div class="nomefilmes"><p>Contos de Terramar</p></div>
-        <div class="nomefilmes"><p>O Castelo Animado</p></div>
-        <div class="nomefilmes"><p>O Castelo no Céu</p></div>
-        <div class="nomefilmes"><p>O Serviço de Entregas da Kiki</p></div>
+        <div class="nomefilmes">
+            <p>Contos de Terramar</p>
+        </div>
+        <div class="nomefilmes">
+            <p>O Castelo Animado</p>
+        </div>
+        <div class="nomefilmes">
+            <p>O Castelo no Céu</p>
+        </div>
+        <div class="nomefilmes">
+            <p>O Serviço de Entregas da Kiki</p>
+        </div>
     </div>
     <script>
-        function assistir(){
-            window.location.href="paginasdeexibicao/aviagemdechihiro.html"
+        function assistir() {
+            window.location.href = "paginasdeexibicao/aviagemdechihiro.html"
         }
-        function minhalista(){
+        function minhalista() {
             var minhalista = window.document.getElementById('btminhalista')
-            minhalista.style.background ="green"
+            minhalista.style.background = "green"
         }
-        function alterarcursor(){
+        function alterarcursor() {
             var meuElemento = document.getElementById("btassistir");
             meuElemento.style.cursor = "pointer";
             var meuElemento = document.getElementById("btminhalista");
@@ -133,21 +167,22 @@
             var meuElemento = document.getElementById("sugestao04");
             meuElemento.style.cursor = "pointer";
         }
-        function abrir(id){
-            if(id=='sugestao01'){
-                window.location.href="contosdeterramar.html"
+        function abrir(id) {
+            if (id == 'sugestao01') {
+                window.location.href = "contosdeterramar.html"
             }
-            if(id=='sugestao02'){
-                window.location.href="ocasteloanimado.html"
+            if (id == 'sugestao02') {
+                window.location.href = "ocasteloanimado.html"
             }
-            if(id=='sugestao03'){
-                window.location.href="ocastelonoceu.html"
+            if (id == 'sugestao03') {
+                window.location.href = "ocastelonoceu.html"
             }
-            if(id=='sugestao04'){
-                window.location.href="oservicodeentregasdakiki.html"
+            if (id == 'sugestao04') {
+                window.location.href = "oservicodeentregasdakiki.html"
             }
         }
     </script>
 
 </body>
+
 </html>
